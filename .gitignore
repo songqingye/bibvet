@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+/bibvet-report.md
+/report.md
+/fixed.bib
+.DS_Store

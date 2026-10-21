@@ -1,0 +1,72 @@
+{
+  "source": "example.bib",
+  "summary": {
+    "total": 4,
+    "ok": 2,
+    "warning": 0,
+    "error": 2,
+    "unverified": 0
+  },
+  "entries": [
+    {
+      "key": "lecun2015deep",
+      "status": "ok",
+      "doi": "10.1038/nature14539",
+      "title": "Deep learning",
+      "registry_source": "crossref",
+      "issues": []
+    },
+    {
+      "key": "lecun2015wrongyear",
+      "status": "error",
+      "doi": "10.1038/nature14539",
+      "title": "Deep learning",
+      "registry_source": "crossref",
+      "issues": [
+        {
+          "level": "warning",
+          "code": "year-mismatch",
+          "message": "Year mismatch: yours 2016, registry 2015 (could be online-first vs print year)"
+        },
+        {
+          "level": "warning",
+          "code": "volume-mismatch",
+          "message": "Volume mismatch: yours 522, registry 521"
+        },
+        {
+          "level": "error",
+          "code": "duplicate",
+          "message": "Duplicate of entry \"lecun2015deep\" (same DOI 10.1038/nature14539)."
+        }
+      ]
+    },
+    {
+      "key": "fake2020",
+      "status": "error",
+      "doi": "10.1038/nature99999",
+      "title": "A study that was never published",
+      "registry_source": null,
+      "issues": [
+        {
+          "level": "error",
+          "code": "doi-not-found",
+          "message": "DOI does not resolve in Crossref or OpenAlex: 10.1038/nature99999"
+        }
+      ]
+    },
+    {
+      "key": "hochreiter1997lstm",
+      "status": "ok",
+      "doi": "10.1162/neco.1997.9.8.1735",
+      "title": "Long short-term memory",
+      "registry_source": "crossref",
+      "issues": [
+        {
+          "level": "info",
+          "code": "doi-suggested",
+          "message": "No DOI given; title matches registry record (similarity 1.00). Suggested DOI: 10.1162/neco.1997.9.8.1735"
+        }
+      ]
+    }
+  ]
+}

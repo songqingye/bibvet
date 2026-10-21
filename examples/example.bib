@@ -1,0 +1,47 @@
+% Example bibliography with deliberate mistakes for the bibvet demo.
+% Run:  bibvet check examples/example.bib --report report.md --bib-out fixed.bib
+%
+% Expected findings:
+%   lecun2015deep       -> ok
+%   lecun2015wrongyear  -> year + volume mismatch (and duplicate title)
+%   fake2020            -> DOI not found
+%   hochreiter1997lstm  -> no DOI: bibvet should suggest 10.1162/neco.1997.9.8.1735
+
+@article{lecun2015deep,
+  author  = {LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+  title   = {Deep learning},
+  journal = {Nature},
+  year    = {2015},
+  volume  = {521},
+  number  = {7553},
+  pages   = {436--444},
+  doi     = {10.1038/nature14539}
+}
+
+@article{lecun2015wrongyear,
+  author  = {LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+  title   = {Deep learning},
+  journal = {Nature},
+  year    = {2016},
+  volume  = {522},
+  pages   = {436--444},
+  doi     = {10.1038/nature14539}
+}
+
+@article{fake2020,
+  author  = {Nobody, Alice and Doesnotexist, Bob},
+  title   = {A study that was never published},
+  journal = {Journal of Imaginary Results},
+  year    = {2020},
+  doi     = {10.1038/nature99999}
+}
+
+@article{hochreiter1997lstm,
+  author  = {Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  title   = {Long short-term memory},
+  journal = {Neural Computation},
+  year    = {1997},
+  volume  = {9},
+  number  = {8},
+  pages   = {1735--1780}
+}
